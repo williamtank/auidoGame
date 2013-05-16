@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Audio Game</title>
+    <link rel="stylesheet" href="css/audiogame.css">
+</head>
+<body>
+
+<div id="game">
+	<section id="menu-scene" class="scene">
+		<a href="#game"><span>Play</span></a>
+	</section>
+
+	<section id="game-scene" class="scene">
+		<canvas id="game-background-canvas" width="768" height="440">请使用Chrome浏览器</canvas>
+		<canvas id="game-canvas" width="768" height="440"></canvas>
+		<div id="hit-line-1" class="hit-line hide"></div>
+		<div id="hit-line-2" class="hit-line hide"></div>
+		<div id="hit-line-3" class="hit-line hide"></div>
+	</section>
+
+</div>
+
+<footer>
+	<p>This is an example of making audio game in HTML5. Press LEFT UP RIGHT to play.</p>
+</footer>
+
+<!--  audio resource	-->
+<audio id="buttonover">
+	<source src="media/button_over.wav"></source>
+	<source src="media/button_over.ogg"></source>
+</audio>
+
+<audio id="buttonactive">
+	<source src="media/button_active.mp3"></source>
+	<source src="media/button_active.ogg"></source>
+</audio>
+<audio id="melody">
+	<source src="media/minuet_in_g_melody.mp3"></source>
+	<source src="media/minuet_in_g_melody.ogg"></source>
+</audio>
+<audio id="base">
+	<source src="media/minuet_in_g.mp3"></source>
+	<source src="media/minuet_in_g.ogg"></source>
+</audio>
+<!--  end of audio resource	-->
+
+<script src="js/jquery-1.6.min.js"></script>
+<script src="html5games.audio.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
